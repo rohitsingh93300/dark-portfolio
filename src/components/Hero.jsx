@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <section 
         // style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
-        id="hero" className="h-[800px] bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 ">
+        id="hero" className="h-max bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 pb-10">
             <div className='' id='stars'>
                 <span></span>
                 <span></span>
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             {/* <div className='bg-black inset-0 opacity-65 absolute '></div> */}
             <div className='max-w-7xl mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-40 justify-between'>
-                <div className='space-y-6 px-4'>
+                <div className='space-y-6  px-4'>
                     <motion.h1 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
@@ -39,7 +39,7 @@ const Hero = () => {
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1.2, delay:0.4}}
-                    className="md:text-2xl text-lg mb-6">Full-Stack Developer | MERN Stack Enthusiast</motion.p>
+                    className="md:text-2xl text-lg  md:mb-6">Full-Stack Developer | MERN Stack Enthusiast</motion.p>
                     <motion.p 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
