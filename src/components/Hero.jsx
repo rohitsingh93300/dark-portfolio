@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <section 
         // style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
-        id="hero" className="h-max bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 ">
+        id="hero" className="h-[800px] bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 ">
             <div className='' id='stars'>
                 <span></span>
                 <span></span>
