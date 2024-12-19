@@ -6,12 +6,12 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <>
+    <div className='overflow-x-hidden'>
       <Navbar/>
       <Hero/>
       <About/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

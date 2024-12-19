@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import {motion} from 'framer-motion'
+import '../components/Css/Hero.css'
 // import BG from '../assets/bg.png'
 // import Navbar from './Navbar';
 
@@ -13,7 +14,19 @@ const Hero = () => {
         <section 
         // style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
         id="hero" className="h-screen bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 ">
-            {/* <Navbar/> */}
+            <div className='' id='stars'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             {/* <div className='bg-black inset-0 opacity-65 absolute '></div> */}
             <div className='max-w-7xl mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-40 justify-between'>
                 <div className='space-y-6 px-4'>
@@ -21,7 +34,7 @@ const Hero = () => {
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1, delay:0.2}}
-                    className="md:text-6xl text-4xl font-bold mb-4">Hi, I'm <span className='text-blue-400 '>Rohit Singh</span></motion.h1>
+                    className="md:text-6xl text-4xl font-bold mb-4">Hi👋, I'm <h2 className='text-blue-400 '>Rohit Singh</h2></motion.h1>
                     <motion.p 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}

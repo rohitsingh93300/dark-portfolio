@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-100 text-gray-800">
+    <div id="about" className="py-20 bg-gray-900  z-50 text-gray-300">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
         <p className="text-lg leading-7 mb-6">
-          Hi! I'm <span className="font-bold">Rohit Singh</span>, a passionate Full-Stack Developer with expertise in the MERN stack, WordPress, and SEO. 
+          Hi! I'm Rohit Singh, a passionate Full-Stack Developer with expertise in the MERN stack, WordPress, and SEO. 
           With a strong foundation in modern web development and an eye for detail, I create elegant, user-friendly web solutions tailored to meet client needs.
         </p>
         <p className="text-lg leading-7 mb-6">
@@ -19,7 +19,7 @@ const About = () => {
           When I’m not coding, I enjoy sharing my knowledge through my <a href="#" className="text-blue-500 underline">YouTube channel</a>, where I teach JavaScript, MERN stack, and WordPress concepts. Let’s connect and build something amazing together!
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 
