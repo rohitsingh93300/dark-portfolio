@@ -72,7 +72,7 @@ const Hero = () => {
                     initial={{opacity:0, scale:0.5}}
                     whileInView={{opacity:1,scale:1}}
                     transition={{duration:1.4, delay:0}}
-                    src={Profile} alt="" className='rounded-full border border-blue-600 md:w-[500px] w-[350px] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)]   shadow-blue-500 ' />
+                    src={Profile} alt="" className='rounded-full border border-blue-600 md:w-[500px] w-[300px] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)]   shadow-blue-500 ' />
                 </div>
             </div>
         </section>

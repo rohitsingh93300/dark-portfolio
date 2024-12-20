@@ -2,17 +2,18 @@ import React from 'react'
 import AboutImg from '../assets/About.png'
 import ReactLogo from '../assets/React.png'
 import Redux from '../assets/Redux.png'
+import { FaChevronRight } from 'react-icons/fa'
 
 const About = () => {
   return (
     <div id="about" className="py-20 bg-gray-900  z-50 text-gray-300 px-0 md:px-0">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-11 text-center">About Me</h2>
-        <div className='flex flex-col md:flex-row gap-20 items-center'>
-          <div className='relative border px-4 md:px-0 border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500'>
+        <div className='flex flex-col order-1 md:flex-row gap-20 items-center'>
+          <div className='relative border  md:order-0  border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500'>
             {/* <img src={ReactLogo} alt="" width={40} className='rounded-full absolute'/>
             <img src={Redux} alt="" width={40} className='rounded-full absolute top-0 left-10'/> */}
-            <img src={AboutImg} alt="" className='w-[1500px] rounded-full border-blue-600 border  shadow-blue-500' />
+            <img src={AboutImg} alt="" className='w-[300px] md:w-[1500px] rounded-full  border-blue-600 border  shadow-blue-500' />
           </div>
           <div className='border p-5 md:p-10 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500 rounded-md'>
             <p className="text-lg leading-7 mb-6">
@@ -27,7 +28,7 @@ const About = () => {
             </p>
             <div className='mt-5'>
               <h1 className='font-bold text-2xl mb-5 text-blue-400'>My Skills</h1>
-            <div className='flex flex-wrap gap-4 text-sm'>
+            <div className='flex flex-wrap gap-4 mb-5 text-sm'>
               <p className='bg-white cursor-pointer text-gray-900 px-2 py-1 rounded-full'>React</p>
               <p className='bg-white cursor-pointer text-gray-900 px-2 py-1 rounded-full'>Next.js</p>
               <p className='bg-white cursor-pointer text-gray-900 px-2 py-1 rounded-full'>Tailwind Css</p>
@@ -36,6 +37,7 @@ const About = () => {
               <p className='bg-white cursor-pointer text-gray-900 px-2 py-1 rounded-full'>Github</p>
             
             </div>
+            <button className='px-3 py-1  rounded-md bg-blue-500 text-white flex items-center gap-1 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#33CCCC,0_0_15px_#33CCCC,0_0_30px_#33CCCC]  shadow-blue-500 border-blue-400 border-2'>Contact<FaChevronRight /></button>
             </div>
           </div>
         </div>
