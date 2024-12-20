@@ -9,8 +9,8 @@ const About = () => {
     <div id="about" className="py-20 bg-gray-900  z-50 text-gray-300 px-0 md:px-0">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold mb-11 text-center">About Me</h2>
-        <div className='flex flex-col order-1 md:flex-row gap-20 items-center'>
-          <div className='relative border  md:order-0  border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500'>
+        <div className='flex flex-col  md:flex-row gap-20 items-center'>
+          <div className='relative border hidden md:block  border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500'>
             {/* <img src={ReactLogo} alt="" width={40} className='rounded-full absolute'/>
             <img src={Redux} alt="" width={40} className='rounded-full absolute top-0 left-10'/> */}
             <img src={AboutImg} alt="" className='w-[300px] md:w-[1500px] rounded-full  border-blue-600 border  shadow-blue-500' />
