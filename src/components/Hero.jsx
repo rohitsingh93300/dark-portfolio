@@ -30,22 +30,22 @@ const Hero = () => {
             </div>
             {/* <div className='bg-black inset-0 opacity-65 absolute '></div> */}
             <div className='max-w-7xl mt-24 mx-auto items-center flex flex-col md:flex-row gap-16 md:gap-40 justify-between'>
-                <div className='space-y-6  px-4'>
+                <div className='md:space-y-6  px-4'>
                     <motion.h1 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1, delay:0.2}}
-                    className="md:text-6xl text-4xl font-bold mb-4">Hi👋, I'm <h2 className='text-blue-400 '>Rohit Singh</h2></motion.h1>
+                    className="md:text-6xl text-4xl font-bold mb-4">Hi👋, I'm <p className='text-blue-400 '>Rohit Singh</p></motion.h1>
                     <motion.p 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1.2, delay:0.4}}
-                    className="md:text-2xl text-lg  md:mb-6">Full-Stack Developer | MERN Stack Enthusiast</motion.p>
+                    className="md:text-2xl text-lg mb-3  md:mb-6">Full-Stack Developer | MERN Stack Enthusiast</motion.p>
                     <motion.p 
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1.4, delay:0.5}}
-                    className='lg:w-[600px] text-sm text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam iste ipsa dolores? Voluptas et quae eveniet obcaecati voluptatibus eaque dolorem fugiat labore cumque esse.</motion.p>
+                    className='lg:w-[600px] mb-4 md:mb-0 text-sm text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam iste ipsa dolores? Voluptas et quae eveniet obcaecati voluptatibus eaque dolorem fugiat labore cumque esse.</motion.p>
                     <motion.button
                     initial={{opacity:0, x:-100}}
                     whileInView={{opacity:1,x:0}}
@@ -55,7 +55,7 @@ const Hero = () => {
                     >
                         <Download className='w-5 h-5'/> Download CV 
                     </motion.button>
-                    <div className='flex gap-3 text-2xl transition-all'>
+                    <div className='flex gap-3 text-2xl transition-all mt-5 md:mt-0'>
                         <FaFacebook className='hover:text-blue-400' />
                         <FaInstagram className='hover:text-blue-400' />
                         <FaLinkedin className='hover:text-blue-400' />
