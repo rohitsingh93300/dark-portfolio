@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import {motion} from 'framer-motion'
 import '../components/Css/Hero.css'
+import { Download } from 'lucide-react'
 // import BG from '../assets/bg.png'
 // import Navbar from './Navbar';
 
@@ -13,7 +14,7 @@ const Hero = () => {
     return (
         <section 
         // style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
-        id="hero" className="h-max bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 pb-10">
+        id="hero" className="h-max md:h-screen bg-gradient-to-l from-gray-950 to-gray-950 text-white flex flex-col justify-center items-center relative z-10 pb-10">
             <div className='' id='stars'>
                 <span></span>
                 <span></span>
@@ -50,9 +51,9 @@ const Hero = () => {
                     whileInView={{opacity:1,x:0}}
                     transition={{duration:1.4, delay:0.5}}
                         href="#projects"
-                        className="px-6 py-2 bg-blue-500 rounded-md text-white hover:bg-blue-600  shadow-blue-500 border-2  border-blue-400 transition-all shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#33CCCC,0_0_15px_#33CCCC,0_0_30px_#33CCCC]"
+                        className="px-3 py-2 flex items-center gap-2 bg-blue-500 rounded-md text-white hover:bg-blue-600  shadow-blue-500 border-2  border-blue-400 transition-all shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#33CCCC,0_0_15px_#33CCCC,0_0_30px_#33CCCC]"
                     >
-                        Download CV
+                        <Download className='w-5 h-5'/> Download CV 
                     </motion.button>
                     <div className='flex gap-3 text-2xl transition-all'>
                         <FaFacebook className='hover:text-blue-400' />
@@ -62,16 +63,16 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='relative group'>
-                    <motion.div 
+                    {/* <motion.div 
                     initial={{opacity:0, scale:0.5}}
                     whileInView={{opacity:1,scale:1}}
                     transition={{duration:1.4, delay:0.2}}
-                    className='bg-blue-500 md:w-[500px] w-[350px] h-[350px] md:h-[500px] absolute rounded-full blur-lg '></motion.div>
+                    className='bg-blue-500 md:w-[500px] w-[350px] h-[350px] md:h-[500px] absolute rounded-full blur-lg '></motion.div> */}
                     <motion.img 
                     initial={{opacity:0, scale:0.5}}
                     whileInView={{opacity:1,scale:1}}
                     transition={{duration:1.4, delay:0}}
-                    src={Profile} alt="" className='md:w-[500px] w-[350px]   drop-shadow-2xl ' />
+                    src={Profile} alt="" className='rounded-full border border-blue-600 md:w-[500px] w-[350px] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)]   shadow-blue-500 ' />
                 </div>
             </div>
         </section>
